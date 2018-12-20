@@ -339,10 +339,10 @@ void setup() {
   
   {
   pinMode (BUZZER, OUTPUT); // BUZZER PIN
-  chipid=ESP.getEfuseMac();
-  sprintf(ble, "SmartGlass%llu", chipid); 
+  //chipid=ESP.getEfuseMac();
+ // sprintf(ble, "SmartGlass%llu", chipid); 
   // Create the BLE Device
-  BLEDevice::init(ble);
+ // BLEDevice::init(ble);
 
   // Create the BLE Server
   BLEServer *pServer = BLEDevice::createServer();
